@@ -1,11 +1,17 @@
 .box {
     align-items: center;
-    width: 250px;
+    width: 300px;
     border: 5px solid rgb(15, 15, 15);
-    padding: 30px;
+    padding: 25px;
     margin:0 auto;
     display:block;
     background-color: gray;
+  }
+
+  .num{
+    font-family: 'Courier New', Courier, monospace;
+    color: #06ff44;
+    font-size: large;
   }
   
 body  
@@ -13,8 +19,7 @@ body
 background-color:tan;  
 }  
 
-.keys  
-{  
+.keys  {  
 background-color:#3d4543;  
 height:300px;  
 width:300px;  
@@ -23,9 +28,10 @@ border-radius:10px;
 position:relative;  
 margin:0 auto;
 display:block;
-}  
+} 
+
 .button {
-    background-color: #f7fdff; /* Green */
+    background-color: #f7fdff;  
     border: none;
     color: rgb(24, 17, 17);
     padding: 15px 32px;
@@ -34,8 +40,9 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-  .button1 {
-    background-color: #f81a1a; /* Green */
+
+.button1 {
+    background-color: #f81a1a;  
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -45,7 +52,7 @@ display:block;
     font-size: 13px;
   }
 
-  .button2 {
+.button2 {
     background-color: #2532df; /* Green */
     border: none;
     color: rgb(255, 255, 255);
@@ -55,8 +62,8 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-  .button2 {
-    background-color: #2532df; /* Green */
+.button2 {
+    background-color: #2532df;  
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
@@ -65,8 +72,8 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-  .button3 {
-    background-color: #000000; /* Green */
+.button3 {
+    background-color: #000000;  
     border: none;
     color: rgb(42, 143, 42);
     padding: 15px 32px;
@@ -75,8 +82,8 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-  .buttonx {
-    background-color: #fd0000; /* Green */
+.buttonx {
+    background-color: #fd0000;  
     border: none;
     color: rgb(255, 255, 255);
     padding: 15px 32px;
