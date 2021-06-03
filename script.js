@@ -121,15 +121,14 @@ function multiple(s) {
 }
 
 function divide(s) {
-    var total = parseFloat(s);
+    var total = 0;
     console.log(total);
     s = s.match(/[+\-]*(\.\d+|\d+(\.\d+)?)/g) || [];
     console.log(s);
-    while (s.length) {
-        total = (s[0] - 0) / (s[1] - 0);
-        console.log(total);
+    total = (s[0]) / (s[1]);
+    console.log(total);
 
-    }
+
     return total;
 
 }
