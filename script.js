@@ -3,98 +3,95 @@ let arr = "";
 let a = 1;
 let option = 0;
 
-function myfunction() {
+document.getElementById("button1").addEventListener("click", function () {
     arr = "";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunctiond() {
+document.getElementById("button2").addEventListener("click", function () {
     arr = arr.slice(0, arr.length - 1)
     document.getElementById("num1").innerHTML = arr;
-}
+    console.log("Hi");
+});
 
-function myfunction7() {
+var x = document.getElementsByClassName("button");
+
+x[0].addEventListener("click", function () {
     arr = arr + "7";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunction1() {
-    arr = arr + '1';
+x[1].addEventListener("click", function () {
+    arr = arr + "8";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunction2() {
-    arr = arr + '2';
+x[2].addEventListener("click", function () {
+    arr = arr + "9";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunction3() {
-    arr = arr + '3';
+x[4].addEventListener("click", function () {
+    arr = arr + "4";
     document.getElementById("num1").innerHTML = arr;
-}
+});
+x[5].addEventListener("click", function () {
+    arr = arr + "5";
+    document.getElementById("num1").innerHTML = arr;
+});
 
-function myfunction4() {
-    arr = arr + '4';
+x[6].addEventListener("click", function () {
+    arr = arr + "6";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunction5() {
-    arr = arr + '5';
+x[8].addEventListener("click", function () {
+    arr = arr + "1";
     document.getElementById("num1").innerHTML = arr;
-}
+});
 
-function myfunction6() {
-    arr = arr + '6';
+x[9].addEventListener("click", function () {
+    arr = arr + "2";
     document.getElementById("num1").innerHTML = arr;
-}
-
-function myfunction8() {
-    arr = arr + '8';
+});
+x[10].addEventListener("click", function () {
+    arr = arr + "3";
     document.getElementById("num1").innerHTML = arr;
-}
-function myfunction9() {
-    arr = arr + '9';
+});
+x[13].addEventListener("click", function () {
+    arr = arr + "0";
     document.getElementById("num1").innerHTML = arr;
-}
-function myfunction0() {
-    arr = arr + '0';
+});
+x[12].addEventListener("click", function () {
+    arr = arr + ".";
     document.getElementById("num1").innerHTML = arr;
-}
-
-function myfunctiondot() {
-    arr = arr
-    document.getElementById("num1").innerHTML = arr;
-}
+});
 
 
-function myfunctionslash() {
+x[3].addEventListener("click", function () {
     arr += '/';
     option = 1;
     document.getElementById("num1").innerHTML = arr;
+});
 
-
-}
-
-function myfunctionx() {
+x[7].addEventListener("click", function () {
     arr += 'x';
     option = 2;
     document.getElementById("num1").innerHTML = arr;
+});
 
-}
-
-function myfunctionminus() {
-    arr += "-";
+x[11].addEventListener("click", function () {
+    arr += '-';
     option = 3;
     document.getElementById("num1").innerHTML = arr;
+});
 
-}
 
-function myfunctionplus() {
-    arr += "+";
+x[14].addEventListener("click", function () {
+    arr += '+';
     option = 4;
     document.getElementById("num1").innerHTML = arr;
-
-}
+});
 
 function addbits(s) {
     var total = 0,
@@ -133,24 +130,27 @@ function divide(s) {
 
 }
 
-function myfunctionequal() {
-    if (option == 4) {
-        arr = addbits(arr);
-        document.getElementById("num1").innerHTML = arr;
+document.getElementById("buttonx").addEventListener("click", function () {
+    {
+        if (option == 4) {
+            arr = addbits(arr);
+            document.getElementById("num1").innerHTML = arr;
+        }
+
+        if (option == 3) {
+            arr = addbits(arr);
+            document.getElementById("num1").innerHTML = arr;
+        }
+
+        if (option == 2) {
+            arr = multiple(arr);
+            document.getElementById("num1").innerHTML = arr;
+        }
+
+        if (option == 1) {
+            arr = divide(arr);
+            document.getElementById("num1").innerHTML = arr;
+        }
     }
 
-    if (option == 3) {
-        arr = addbits(arr);
-        document.getElementById("num1").innerHTML = arr;
-    }
-
-    if (option == 2) {
-        arr = multiple(arr);
-        document.getElementById("num1").innerHTML = arr;
-    }
-
-    if (option == 1) {
-        arr = divide(arr);
-        document.getElementById("num1").innerHTML = arr;
-    }
-}
+});

@@ -41,7 +41,7 @@ display:block;
     font-size: 13px;
   }
 
-.button1 {
+#button1 {
     background-color: #f81a1a;  
     border: none;
     color: rgb(255, 255, 255);
@@ -52,7 +52,7 @@ display:block;
     font-size: 13px;
   }
 
-.button2 {
+#button2 {
     background-color: #2532df; /* Green */
     border: none;
     color: rgb(255, 255, 255);
@@ -62,7 +62,7 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-.button2 {
+#button2 {
     background-color: #2532df;  
     border: none;
     color: rgb(255, 255, 255);
@@ -72,7 +72,7 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-.button3 {
+#button3 {
     background-color: #000000;  
     border: none;
     color: rgb(42, 143, 42);
@@ -82,7 +82,7 @@ display:block;
     display: inline-block;
     font-size: 13px;
   }
-.buttonx {
+#buttonx {
     background-color: #fd0000;  
     border: none;
     color: rgb(255, 255, 255);
